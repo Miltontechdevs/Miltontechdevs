@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milton | Web Developer</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #171a21;
+    --accent: #4f8cff;
+    --text: #e8eaed;
+    --muted: #9aa0a6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    padding: 80px 20px 60px;
+    text-align: center;
+    background: linear-gradient(180deg, #171a21 0%, #0f1115 100%);
+  }
+  header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+  }
+  header p.tagline {
+    color: var(--accent);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  header p.intro {
+    max-width: 560px;
+    margin: 0 auto;
+    color: var(--muted);
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 24px;
+    border: 1px solid #22262f;
+  }
+  .card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+    color: var(--accent);
+  }
+  ul.services {
+    list-style: none;
+  }
+  ul.services li {
+    padding: 12px 0;
+    border-bottom: 1px solid #262a33;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  ul.services li:last-child { border-bottom: none; }
+  ul.services li strong { color: var(--text); }
+  ul.services li span.price {
+    color: var(--accent);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .badge {
+    background: #1e2229;
+    border: 1px solid #2a2f38;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .contact-btn {
+    flex: 1;
+    min-width: 200px;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s;
+  }
+  .contact-btn:hover { opacity: 0.85; }
+  .whatsapp { background: #25d366; color: #0f1115; }
+  .email { background: var(--accent); color: #0f1115; }
+  footer {
+    text-align: center;
+    padding: 30px;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Milton</h1>
+    <p class="tagline">Web Developer &mdash; Cloud Computing &amp; Information Security Student</p>
+    <p class="intro">I design and build clean, affordable, and secure websites for small businesses, shops, and individuals in Kenya &mdash; backed by hands-on training in cloud computing and information security.</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Services &amp; Pricing</h2>
+      <ul class="services">
+        <li><span><strong>Basic Website</strong><br>Single page, contact info, professional design</span><span class="price">KSh 3,000&ndash;5,000</span></li>
+        <li><span><strong>Standard Website</strong><br>Multiple pages, gallery/services section</span><span class="price">KSh 6,000&ndash;10,000</span></li>
+        <li><span><strong>Website + Hosting Setup</strong><br>Includes domain and hosting configuration</span><span class="price">+KSh 2,000&ndash;3,000</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Why Work With Me</h2>
+      <ul class="services">
+        <li>Fast turnaround, clear and honest communication</li>
+        <li>Fair, transparent pricing &mdash; no hidden costs</li>
+        <li>Security-conscious builds &mdash; a direct benefit of my InfoSec training</li>
+        <li>50% deposit to start, 50% on delivery &mdash; simple and fair for both sides</li>
+      </ul>
+      <div class="trust-badges">
+        <div class="badge">M-Pesa Payments Accepted</div>
+        <div class="badge">Machakos University Student</div>
+        <div class="badge">Cloud Computing &amp; InfoSec Background</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Get In Touch</h2>
+      <div class="contact-grid">
+        <a href="https://wa.me/254741055900" class="contact-btn whatsapp">WhatsApp Me</a>
+        <a href="mailto:mondamilton9@gmail.com" class="contact-btn email">Email Me</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2026 Milton. Built and deployed with GitHub Pages.
+  </footer>
+
+</body>
+</html>
